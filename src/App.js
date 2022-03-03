@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import Header from "./pages/cover";
 import GitFarm from "./pages/gitfarm";
 import Pet from "./pages/pet";
+import Login from "./pages/login";
 import { darkMode, lightMode } from "./styles/theme";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <GitFarm />
       <Pet />
+      <Login />
     </ThemeProvider>
   );
 }
