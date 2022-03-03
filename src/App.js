@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import Header from "./pages/cover";
+import GitFarm from "./pages/gitfarm";
+import Pet from "./pages/pet";
+import { darkMode, lightMode } from "./styles/theme";
 
 function App() {
+  const [themeMode, setThemeMode] = useState("light");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={themeMode === "light" ? lightMode : darkMode}>
+      <Header />
+      <GitFarm />
+      <Pet />
+    </ThemeProvider>
   );
 }
 
