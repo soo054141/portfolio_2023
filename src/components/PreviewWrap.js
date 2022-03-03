@@ -7,7 +7,7 @@ const PreviewWrap = styled.div`
   justify-content: center;
 
   img {
-    width: ${(props) => (props.mobile ? "375px" : "100%")};
+    width: ${(props) => (props.mobile ? "315px" : "575px")};
     padding: 20px;
     border: 2px solid #a5a5a5;
     border-radius: 10px;
