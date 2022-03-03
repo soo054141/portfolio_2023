@@ -29,7 +29,7 @@ function GitFarm({
         repo={repo}
       />
       <PreviewWrap mobile={mobile}>
-        <a href="">
+        <a href={view}>
           <img src={gitfarm} alt="gitfarm" />
         </a>
       </PreviewWrap>
@@ -53,7 +53,7 @@ GitFarm.defaultProps = {
     "랭킹 시스템을 도입하여 유저들간의 선의의 경쟁을 유도할 수 있게 하였습니다.",
   ],
   view: "https://elice-kdt-sw-1st-team1.elicecoding.com/",
-  repo: "https://elice-kdt-sw-1st-team1.elicecoding.com/",
+  repo: "https://github.com/soo054141/GitFarm",
   mobile: true,
 };
 
@@ -66,6 +66,6 @@ GitFarm.propTypes = {
   detail: PropTypes.arrayOf(PropTypes.string),
   view: PropTypes.string,
   repo: PropTypes.string,
-  small: PropTypes.bool,
+  mobile: PropTypes.bool,
 };
 export default GitFarm;
