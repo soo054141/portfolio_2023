@@ -3,8 +3,19 @@ import PropTypes from "prop-types";
 import { Container } from "../../components/Container";
 import InfoWrap from "../../components/InfoWrap";
 import PreviewWrap from "../../components/PreviewWrap";
+import gitfarm from "../../asset/images/gitfarm.png";
 
-function GitFarm({ title, subTitle, year, team, stack, detail, view, repo }) {
+function GitFarm({
+  title,
+  subTitle,
+  year,
+  team,
+  stack,
+  detail,
+  view,
+  repo,
+  mobile,
+}) {
   return (
     <Container>
       <InfoWrap
@@ -17,7 +28,11 @@ function GitFarm({ title, subTitle, year, team, stack, detail, view, repo }) {
         view={view}
         repo={repo}
       />
-      <PreviewWrap></PreviewWrap>
+      <PreviewWrap mobile={mobile}>
+        <a href="">
+          <img src={gitfarm} alt="gitfarm" />
+        </a>
+      </PreviewWrap>
     </Container>
   );
 }
@@ -39,6 +54,7 @@ GitFarm.defaultProps = {
   ],
   view: "https://elice-kdt-sw-1st-team1.elicecoding.com/",
   repo: "https://elice-kdt-sw-1st-team1.elicecoding.com/",
+  mobile: true,
 };
 
 GitFarm.propTypes = {
@@ -50,5 +66,6 @@ GitFarm.propTypes = {
   detail: PropTypes.arrayOf(PropTypes.string),
   view: PropTypes.string,
   repo: PropTypes.string,
+  small: PropTypes.bool,
 };
 export default GitFarm;
