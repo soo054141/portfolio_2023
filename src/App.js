@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import Header from "./pages/cover";
+import Header from "./pages/header";
 import GitFarm from "./pages/gitfarm";
 import Pet from "./pages/pet";
 import Login from "./pages/login";
