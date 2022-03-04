@@ -45,6 +45,7 @@ GitFarm.defaultProps = {
   stack: "ReactJS, React Hooks API, styled-components",
   detail: [
     "Git 잔디 관리를 즐겁고 꾸준하게 할 수 있도록 장려하고 도와주는 서비스",
+    "",
     "기존 GitHub 페이지에서 제공하는 잔디 그래프 형태 대신에,",
     "캘린더와 차트 형태로 데이터를 시각화하여 제공하기 때문에",
     "유저는 데이터를 좀 더 쉽게 파악하고 분석할 수 있습니다.",
