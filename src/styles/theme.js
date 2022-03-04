@@ -17,5 +17,6 @@ export const darkMode = {
 export const lightMode = {
   bgColor: "#f4f4f2",
   color: "#202124",
+  lightGray: "#74746f",
   device,
 };

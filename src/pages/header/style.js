@@ -12,3 +12,7 @@ export const TitleWrap = styled.div`
     margin-left: -10px;
   }
 `;
+
+export const NameWrap = styled.div`
+  margin-top: 40rem;
+`;

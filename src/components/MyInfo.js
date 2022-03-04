@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const NameWrap = styled.div`
-  margin-top: 40rem;
+export const MyInfo = styled.div`
   font-weight: bold;
   h2 {
     margin-left: -3px;
