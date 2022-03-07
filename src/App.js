@@ -4,6 +4,7 @@ import Header from "./pages/header";
 import GitFarm from "./pages/gitfarm";
 import Pet from "./pages/pet";
 import Login from "./pages/login";
+import Intro from "./pages/intro";
 import { darkMode, lightMode } from "./styles/theme";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <GitFarm />
       <Pet />
       <Login />
+      <Intro />
     </ThemeProvider>
   );
 }
