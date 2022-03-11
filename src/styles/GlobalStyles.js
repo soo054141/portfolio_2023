@@ -12,7 +12,7 @@ const globalStyles = createGlobalStyle`
         
     }
     html{
-        font-family:-apple-system, 'Noto Sans KR', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Noto Sans KR', sans-serif;
+        font-family:-apple-system, 'Noto Sans KR', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Pinyon Script', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Noto Sans KR', sans-serif;
         font-size: 10px;
     }
 `;

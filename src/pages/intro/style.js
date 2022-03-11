@@ -15,11 +15,9 @@ export const IntroContainer = styled.div`
 `;
 
 export const ActivitiesWrap = styled.div`
-  /* display: grid;
-  grid-template-columns: 70px 1fr 70px 1fr; */
   display: flex;
   justify-content: space-between;
-  margin-top: 1.9rem;
+  margin-top: 4rem;
   line-height: 1.5;
 `;
 
