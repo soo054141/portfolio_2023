@@ -8,7 +8,6 @@ import {
   TitleWrap,
   NameWrap,
 } from "./style";
-import { MyInfo } from "../../components/MyInfo";
 
 function Header() {
   return (
