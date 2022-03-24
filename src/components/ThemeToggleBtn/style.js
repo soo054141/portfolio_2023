@@ -14,6 +14,7 @@ export const ToggleWrapper = styled.button`
   height: 36px;
   border-radius: 5px;
   cursor: pointer;
+  opacity: 0.8;
   background-color: ${(props) => props.theme.bgColor};
   color: ${(props) => props.theme.color};
 `;

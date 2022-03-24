@@ -6,10 +6,11 @@ import GitFarm from "./pages/gitfarm";
 import Pet from "./pages/pet";
 import Login from "./pages/login";
 import Intro from "./pages/intro";
+import Footer from "./pages/footer";
 import { darkMode, lightMode } from "./styles/theme";
 
 function App() {
-  const [themeMode, setThemeMode] = useState("dark");
+  const [themeMode, setThemeMode] = useState("light");
 
   const toggleTheme = () => {
     setThemeMode(themeMode === "light" ? "dark" : "light");
@@ -23,6 +24,7 @@ function App() {
       <Pet />
       <Login />
       <Intro />
+      <Footer />
     </ThemeProvider>
   );
 }

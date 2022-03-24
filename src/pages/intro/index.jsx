@@ -26,8 +26,20 @@ function Intro() {
     {
       subheading: "엘리스 SW Engineer Track",
       content:
-        "엘리스 SW Engineer Track에서 웹 프론트엔드 과정에 필요한 JavaScript, React.js, node.js 등 학습",
+        "엘리스 SW Engineer Track에서 웹 프론트엔드 과정에 필요한 JavaScript, React.js, node.js, Git 학습",
       date: "2021-10 ~ 2022-02",
+    },
+    {
+      subheading: "알고리즘 스터디",
+      content:
+        "React를 익히고 이용하여 개인 프로젝트 제작, JavaScript의 자료구조와 알고리즘을 공부하는 소규모 스터디 운영 및 활동",
+      date: "2021-03 ~ 2021-09",
+    },
+    {
+      subheading: "패스트캠퍼스 취업완성스쿨 1기",
+      content:
+        "패스트캠퍼스에서 주관하는 취업 완성 스쿨 1기 선발 과정에 참여, 자료구조와 알고리즘 학습",
+      date: "2021-02 ~ 2021-03",
     },
     {
       subheading: "이노베이션 아카데미 42 seoul La piscine",
@@ -36,10 +48,9 @@ function Intro() {
       date: "2020-11 ~ 2020-12",
     },
     {
-      subheading: "오프라인 스터디 활동",
-      content:
-        "React를 익히고 이용하여 개인 프로젝트 제작, JavaScript의 자료구조와 알고리즘을 공부하는 소규모 스터디 운영 및 활동",
-      date: "2020-03 ~ 2020-09",
+      subheading: "웹접근성기반 디지털웹디자인 양성 교육",
+      content: "HTML5, CSS3, JavaScript를 익히는 반응형 웹 제작 교육",
+      date: "2018-07 ~ 2018-12",
     },
   ];
 

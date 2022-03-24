@@ -1,6 +1,6 @@
 import React from "react";
+import { BgWrapper } from "../../components/BgWrapper";
 import {
-  Container,
   Wrapper,
   Frame,
   UnderTitle,
@@ -11,7 +11,7 @@ import {
 
 function Header() {
   return (
-    <Container>
+    <BgWrapper>
       <Wrapper>
         <Frame />
         <UnderTitle>Port&nbsp;io</UnderTitle>
@@ -22,7 +22,7 @@ function Header() {
         </TitleWrap>
         <NameWrap>김유림</NameWrap>
       </Wrapper>
-    </Container>
+    </BgWrapper>
   );
 }
 

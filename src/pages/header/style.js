@@ -1,16 +1,5 @@
 import styled, { css } from "styled-components";
-import bg from "../../asset/images/header_bg3.jpg";
 import frame from "../../asset/images/header-frame.png";
-
-export const Container = styled.div`
-  z-index: -99;
-  width: 100%;
-  height: 95rem;
-  color: ${(props) => props.theme.color};
-  background: url(${bg});
-  background-size: 100%;
-  background-repeat: no-repeat;
-`;
 
 export const Wrapper = styled.div`
   z-index: 0;
