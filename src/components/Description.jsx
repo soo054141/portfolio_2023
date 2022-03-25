@@ -19,7 +19,12 @@ const Subheading = styled.div`
 const Date = styled.div`
   font-size: 1.6rem;
   color: #98a8b9;
+
+  @media ${({ theme }) => theme.device.tablet} {
+    font-size: 1.2rem;
+  }
 `;
+
 const Content = styled.p`
   font-size: 1.6rem;
   color: ${(props) => props.theme.lightGray};
