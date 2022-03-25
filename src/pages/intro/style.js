@@ -19,6 +19,11 @@ export const ActivitiesWrap = styled.div`
   justify-content: space-between;
   margin-top: 4rem;
   line-height: 1.5;
+
+  @media ${({ theme }) => theme.device.laptopL} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ActivitiesTitle = styled.div`
@@ -31,5 +36,10 @@ export const ActivitiesContent = styled.div`
 
   & > :not(:first-child) {
     margin-top: 1.9rem;
+  }
+
+  @media ${({ theme }) => theme.device.laptopL} {
+    width: 100%;
+    margin: 3.8rem 0;
   }
 `;

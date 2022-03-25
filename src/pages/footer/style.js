@@ -10,7 +10,7 @@ export const Message = styled.div`
   font-size: 2.8rem;
   padding-top: 40rem;
 
-  & > h1 {
+  & > h2 {
     width: 100%;
     text-align: center;
     font-size: 3rem;
@@ -20,6 +20,17 @@ export const Message = styled.div`
 
   & > p > span {
     font-weight: 700;
+  }
+
+  @media ${({ theme }) => theme.device.laptopL} {
+    width: 40vw;
+  }
+  @media ${({ theme }) => theme.device.laptop} {
+    width: 45vw;
+  }
+
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 80vw;
   }
 `;
 
@@ -38,5 +49,15 @@ export const Contact = styled.div`
 
   & > p {
     margin-left: 4.4vw;
+  }
+
+  @media ${({ theme }) => theme.device.tablet} {
+    & > h3 {
+      width: 100px;
+    }
+
+    & > p {
+      margin-left: 7.4vw;
+    }
   }
 `;

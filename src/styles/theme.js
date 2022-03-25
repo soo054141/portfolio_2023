@@ -1,11 +1,13 @@
 export const deviceSizes = {
-  tablet: "640px",
-  laptop: "900px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
 };
 
 export const device = {
-  tablet: `screen and (min-width: ${deviceSizes.tablet})`,
-  laptop: `screen and (min-width: ${deviceSizes.laptop})`,
+  tablet: `screen and (max-width: ${deviceSizes.tablet})`,
+  laptop: `screen and (max-width: ${deviceSizes.laptop})`,
+  laptopL: `screen and (max-width: ${deviceSizes.laptopL})`,
 };
 
 export const darkMode = {

@@ -24,7 +24,7 @@ function InfoWrap({ title, subTitle, year, team, stack, detail, view, repo }) {
       <Info.DetailWrapper>
         <Info.DetailTitle>상세설명</Info.DetailTitle>
         {detail &&
-          detail.map((txt: string, i: React.Key) => {
+          detail.map((txt, i) => {
             return (
               <Info.DetailContent key={i}>
                 {txt}

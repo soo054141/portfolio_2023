@@ -17,6 +17,22 @@ export const Wrapper = styled.div`
     font-size: 23.7rem;
     font-family: "Pinyon Script";
   }
+
+  @media ${({ theme }) => theme.device.laptop} {
+    width: 75vw;
+
+    h1 {
+      font-size: 21rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 80vw;
+
+    h1 {
+      font-size: 12rem;
+    }
+  }
 `;
 
 export const Frame = styled.div`
@@ -25,12 +41,21 @@ export const Frame = styled.div`
   width: 100%;
   height: 100%;
   background: no-repeat center/70% url(${frame});
+  background-size: contain;
 `;
 
 export const UnderTitle = styled.h1`
   z-index: 0;
-  word-spacing: 350px;
+  word-spacing: 18.229vw;
   transform: translate(-50%, -50%) rotate(-10deg);
+
+  @media ${({ theme }) => theme.device.laptopL} {
+    word-spacing: 25vw;
+  }
+
+  @media ${({ theme }) => theme.device.laptop} {
+    word-spacing: 30vw;
+  }
 `;
 
 export const AboveTitle = styled.h1`
@@ -40,7 +65,7 @@ export const AboveTitle = styled.h1`
 
 const titleStyles = css`
   z-index: 3;
-  width: 72rem;
+  width: 720px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -49,6 +74,18 @@ const titleStyles = css`
   font-size: 1.8rem;
   opacity: 0.8;
   text-shadow: 10px 10px 10px #776d66;
+
+  @media ${({ theme }) => theme.device.laptopL} {
+    width: 46.18vw;
+  }
+
+  @media ${({ theme }) => theme.device.laptop} {
+    width: 57.71vw;
+  }
+
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 61.71vw;
+  }
 `;
 
 export const TitleWrap = styled.div`
