@@ -5,9 +5,19 @@ import InfoWrap from "../../components/InfoWrap";
 import PreviewWrap from "../../components/PreviewWrap";
 import animal from "../../asset/images/animal.gif";
 
-function Pet({ title, subTitle, year, team, stack, detail, view, repo }) {
+function Pet({
+  leftSideImg,
+  title,
+  subTitle,
+  year,
+  team,
+  stack,
+  detail,
+  view,
+  repo,
+}) {
   return (
-    <Container>
+    <Container leftSideImg={leftSideImg}>
       <PreviewWrap>
         <a href={view}>
           <img src={animal} alt="animal" />
@@ -28,6 +38,7 @@ function Pet({ title, subTitle, year, team, stack, detail, view, repo }) {
 }
 
 Pet.defaultProps = {
+  leftSideImg: true,
   title: "유기동물 정보 커뮤니티",
   subTitle: "반려in",
   year: 2022,
@@ -46,6 +57,7 @@ Pet.defaultProps = {
 };
 
 Pet.propTypes = {
+  leftSideImg: PropTypes.bool,
   title: PropTypes.string,
   subTitle: PropTypes.string,
   year: PropTypes.number,

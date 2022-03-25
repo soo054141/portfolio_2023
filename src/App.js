@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import ThemeToggleBtn from "./components/ThemeToggleBtn/ThemeToggleBtn";
 import Header from "./pages/header";
 import GitFarm from "./pages/gitfarm";
@@ -19,14 +19,21 @@ function App() {
   return (
     <ThemeProvider theme={themeMode === "light" ? lightMode : darkMode}>
       <ThemeToggleBtn toggleTheme={toggleTheme} mode={themeMode} />
-      <Header />
-      <GitFarm />
-      <Pet />
-      <Login />
-      <Intro />
-      <Footer />
+      <Main>
+        <Header />
+        <GitFarm />
+        <Pet />
+        <Login />
+        <Intro />
+        <Footer />
+      </Main>
     </ThemeProvider>
   );
 }
 
 export default App;
+
+const Main = styled.div`
+  background-color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.color};
+`;

@@ -20,7 +20,9 @@ function Header() {
           <h6>프론트엔드 개발자</h6>
           <h6>2022</h6>
         </TitleWrap>
-        <NameWrap>김유림</NameWrap>
+        <NameWrap>
+          <h6>김유림</h6>
+        </NameWrap>
       </Wrapper>
     </BgWrapper>
   );

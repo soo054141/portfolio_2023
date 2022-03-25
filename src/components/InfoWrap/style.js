@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 40%;
+  width: 40vw;
 
   & > div {
     margin-top: 4rem;
+  }
+
+  @media ${({ theme }) => theme.device.laptop} {
+    width: 100%;
   }
 `;
 
