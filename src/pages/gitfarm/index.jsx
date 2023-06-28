@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Container } from "../../components/Container";
-import InfoWrap from "../../components/InfoWrap";
 import PreviewWrap from "../../components/PreviewWrap";
-import gitfarm from "../../asset/images/gitfarm.png";
+import gitfarm from "asset/images/gitfarm.png";
+import InfoWrap from "components/InfoWrap";
 
 function GitFarm({
   title,
@@ -53,7 +53,6 @@ GitFarm.defaultProps = {
     "다양한 기능으로 게임하는 듯한 재미와 성취감을 느낄 수 있게 하였습니다.",
     "랭킹 시스템을 도입하여 유저들간의 선의의 경쟁을 유도할 수 있게 하였습니다.",
   ],
-  view: "https://elice-kdt-sw-1st-team1.elicecoding.com/",
   repo: "https://github.com/soo054141/GitFarm",
   mobile: true,
 };
