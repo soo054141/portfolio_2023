@@ -52,7 +52,6 @@ Pet.defaultProps = {
     "입양한 반려동물과 함께 하는 일상을 공유하거나, 입양을 원하는",
     "유저간의 정보 공유가 가능한 게시판 기능이 있습니다.",
   ],
-  view: "https://elice3.herokuapp.com/",
   repo: "https://github.com/soo054141/pet-project",
 };
 
