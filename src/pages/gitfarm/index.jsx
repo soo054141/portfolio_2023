@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container } from "../../components/Container";
 import PreviewWrap from "../../components/PreviewWrap";
-import gitfarm from "asset/images/gitfarm.png";
 import InfoWrap from "components/InfoWrap";
+import VideoContainer from "./VideoContainer";
 
 function GitFarm({
   title,
@@ -14,7 +14,6 @@ function GitFarm({
   detail,
   view,
   repo,
-  mobile,
 }) {
   return (
     <Container>
@@ -28,10 +27,8 @@ function GitFarm({
         view={view}
         repo={repo}
       />
-      <PreviewWrap mobile={mobile}>
-        <a href={view}>
-          <img src={gitfarm} alt="gitfarm" />
-        </a>
+      <PreviewWrap >
+        <VideoContainer />
       </PreviewWrap>
     </Container>
   );
@@ -52,9 +49,8 @@ GitFarm.defaultProps = {
     "커밋 수에 따라 채워지는 농장 꾸미기, 랭킹 시스템, 배지 획득 등의",
     "다양한 기능으로 게임하는 듯한 재미와 성취감을 느낄 수 있게 하였습니다.",
     "랭킹 시스템을 도입하여 유저들간의 선의의 경쟁을 유도할 수 있게 하였습니다.",
-  ],
+  ],    
   repo: "https://github.com/soo054141/GitFarm",
-  mobile: true,
 };
 
 GitFarm.propTypes = {
@@ -66,6 +62,5 @@ GitFarm.propTypes = {
   detail: PropTypes.arrayOf(PropTypes.string),
   view: PropTypes.string,
   repo: PropTypes.string,
-  mobile: PropTypes.bool,
 };
 export default GitFarm;

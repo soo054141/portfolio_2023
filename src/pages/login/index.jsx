@@ -20,7 +20,7 @@ function Login({ title, subTitle, year, team, stack, detail, view, repo }) {
       />
       <PreviewWrap>
         <a href={view}>
-          <img src={loginImg} alt="gitfarm" />
+          <img src={loginImg} alt="login" />
         </a>
       </PreviewWrap>
     </Container>

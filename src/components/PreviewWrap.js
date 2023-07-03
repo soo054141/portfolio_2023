@@ -6,7 +6,8 @@ const PreviewWrap = styled.div`
   align-items: center;
   justify-content: center;
 
-  img {
+  img,
+  .react-player {
     width: 100%;
     padding: 20px;
     border: 2px solid #a5a5a5;
@@ -20,7 +21,8 @@ const PreviewWrap = styled.div`
   @media ${({ theme }) => theme.device.tablet} {
     width: 70vw;
 
-    img {
+    img,
+    .react-player {
       width: 70vw;
     }
   }
